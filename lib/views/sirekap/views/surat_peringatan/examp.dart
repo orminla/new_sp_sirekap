@@ -150,293 +150,176 @@ class _Examp_pageState extends State<Examp_page> {
                 ),
               ),
 
-              // info sp
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
-                    width: 1350,
+                    width: 916,
                     height: 156,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       color: const Color(0xFFFFFFFF),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withOpacity(0.2),
+                          spreadRadius: 5,
+                          blurRadius: 70,
+                          offset: const Offset(0, 5),
+                        ),
+                      ],
                     ),
+
+                    //per total sp
                     child: Row(
                       children: [
+                        // sp1
                         Container(
                           margin: EdgeInsets.only(left: 33),
                           width: 85,
                           height: 85,
                           color: Color(0xFFFFE603),
+                          child: Center(
+                            child: Text(
+                              'SP I',
+                              style: GoogleFonts.poppins(
+                                  color: Colors.black,
+                                  fontSize: 24,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                          ),
                         ),
                         Container(
                           width: 112,
                           height: 85,
                           color: Color(0xFFD9D9D9),
+                          child: Center(
+                            child: Text(
+                              '10',
+                              style: GoogleFonts.poppins(
+                                  color: Colors.black,
+                                  fontSize: 36,
+                                  fontWeight: FontWeight.bold
+                              ),
+                            ),
+                          ),
                         ),
+
+                        // sp2
                         Container(
                           margin: EdgeInsets.only(left: 22),
                           width: 85,
                           height: 85,
                           color: Color(0xFFF77700),
+                          child: Center(
+                            child: Text(
+                              'SP II',
+                              style: GoogleFonts.poppins(
+                                  color: Colors.black,
+                                  fontSize: 24,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                          ),
                         ),
                         Container(
                           width: 112,
                           height: 85,
                           color: Color(0xFFD9D9D9),
+                          child: Center(
+                            child: Text(
+                              '21',
+                              style: GoogleFonts.poppins(
+                                  color: Colors.black,
+                                  fontSize: 36,
+                                  fontWeight: FontWeight.bold
+                              ),
+                            ),
+                          ),
                         ),
+
+                        // sp3
                         Container(
                           margin: EdgeInsets.only(left: 22),
                           width: 85,
                           height: 85,
                           color: Color(0xFFF70000),
+                          child: Center(
+                            child: Text(
+                              'SP III',
+                              style: GoogleFonts.poppins(
+                                  color: Colors.black,
+                                  fontSize: 24,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                          ),
                         ),
                         Container(
                           width: 112,
                           height: 85,
                           color: Color(0xFFD9D9D9),
+                          child: Center(
+                            child: Text(
+                              '5',
+                              style: GoogleFonts.poppins(
+                                  color: Colors.black,
+                                  fontSize: 36,
+                                  fontWeight: FontWeight.bold
+                              ),
+                            ),
+                          ),
                         ),
+                        
+                        // do
                         Container(
                           margin: EdgeInsets.only(left: 22),
                           width: 85,
                           height: 85,
                           color: Color(0xFF575757),
+                          child: Center(
+                            child: Text(
+                              'DO',
+                              style: GoogleFonts.poppins(
+                                  color: Colors.black,
+                                  fontSize: 24,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                          ),
                         ),
                         Container(
                           width: 112,
                           height: 85,
                           color: Color(0xFFD9D9D9),
+                          child: Center(
+                            child: Text(
+                              '0',
+                              style: GoogleFonts.poppins(
+                                  color: Colors.black,
+                                  fontSize: 36,
+                                  fontWeight: FontWeight.bold
+                              ),
+                            ),
+                          ),
                         )
                       ],
                     ),
                   ),
-                  Container(
-                    margin: EdgeInsets.only(top: 50),
-                    width: 916,
-                    height: 218,
-                    decoration: BoxDecoration(
-                      color: const Color(0xFFEFEFEF),
-                    ),
-                    child: Column(
-                      children: [
-                        Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Padding(padding: EdgeInsets.only(left: 360)),
-                              Text(
-                                "Pengumuman",
-                                style: GoogleFonts.poppins(
-                                    fontSize: 25, color: Color(0xFF121111)),
-                              ),
-                              SizedBox(
-                                width: 190,
-                              ),
-                              Text(
-                                "Lihat semua",
-                                style: GoogleFonts.poppins(
-                                    fontSize: 18,
-                                    color: Color(0xFF1D9FD6),
-                                    decoration: TextDecoration.underline,
-                                    decorationColor: Color(0xFF1D9FD6)),
-                              ),
-                              Icon(
-                                Icons.arrow_forward,
-                                color: Color(0xFF1D9FD6),
-                                size: 30,
-                              ),
-                            ]),
-                        Divider(
-                          color: Color(0xFF39EADD),
-                          thickness: 5,
-                        ),
-                        Row(
-                          children: [
-                            Container(
-                              margin: EdgeInsets.all(8.0),
-                              width: 54,
-                              height: 130,
-                              decoration: BoxDecoration(
-                                color: Color(0xFFAAA1A1),
-                                border: Border(
-                                    top: BorderSide(color: Colors.black)),
-                              ),
-                            ),
-                            Container(
-                              width: 138,
-                              height: 130,
-                              padding: EdgeInsets.only(top: 10),
-                              decoration: BoxDecoration(
-                                border: Border(
-                                    top: BorderSide(color: Colors.black)),
-                              ),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    'Bersihkan papan tulis di kelas 11 - 15',
-                                    style: TextStyle(
-                                      fontSize: 14,
-                                    ),
-                                  ),
-                                  SizedBox(height: 5),
-                                  Text(
-                                    '11 Jul',
-                                    style: TextStyle(
-                                      fontSize: 12,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Container(
-                              margin: EdgeInsets.all(8.0),
-                              width: 54,
-                              height: 130,
-                              decoration: BoxDecoration(
-                                color: Color(0xFFAAA1A1),
-                                border: Border(
-                                    top: BorderSide(color: Colors.black)),
-                              ),
-                            ),
-                            Container(
-                              width: 138,
-                              height: 130,
-                              padding: EdgeInsets.only(top: 10),
-                              decoration: BoxDecoration(
-                                border: Border(
-                                    bottom: BorderSide(
-                                        color: Colors.green, width: 15),
-                                    top: BorderSide(color: Colors.black)),
-                              ),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    'Bersihkan papan tulis di kelas 11 - 15',
-                                    style: TextStyle(
-                                      fontSize: 14,
-                                    ),
-                                  ),
-                                  SizedBox(height: 5),
-                                  Text(
-                                    '11 Jul',
-                                    style: TextStyle(
-                                      fontSize: 12,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Container(
-                              margin: EdgeInsets.all(8.0),
-                              width: 54,
-                              height: 130,
-                              decoration: BoxDecoration(
-                                color: Color(0xFFAAA1A1),
-                                border: Border(
-                                    top: BorderSide(color: Colors.black)),
-                              ),
-                            ),
-                            Container(
-                              width: 138,
-                              height: 130,
-                              padding: EdgeInsets.only(top: 10),
-                              decoration: BoxDecoration(
-                                border: Border(
-                                    top: BorderSide(color: Colors.black)),
-                              ),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    'Bersihkan papan tulis di kelas 11 - 15',
-                                    style: TextStyle(
-                                      fontSize: 14,
-                                    ),
-                                  ),
-                                  SizedBox(height: 5),
-                                  Text(
-                                    '11 Jul',
-                                    style: TextStyle(
-                                      fontSize: 12,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Container(
-                              margin: EdgeInsets.all(8.0),
-                              width: 54,
-                              height: 130,
-                              decoration: BoxDecoration(
-                                color: Color(0xFFAAA1A1),
-                                border: Border(
-                                    top: BorderSide(color: Colors.black)),
-                              ),
-                            ),
-                            Container(
-                              width: 138,
-                              height: 130,
-                              padding: EdgeInsets.only(top: 10),
-                              decoration: BoxDecoration(
-                                border: Border(
-                                    top: BorderSide(color: Colors.black)),
-                              ),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    'Bersihkan papan tulis di kelas 11 - 15',
-                                    style: TextStyle(
-                                      fontSize: 14,
-                                    ),
-                                  ),
-                                  SizedBox(height: 5),
-                                  Text(
-                                    '11 Jul',
-                                    style: TextStyle(
-                                      fontSize: 12,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    alignment: Alignment.center,
-                    margin: EdgeInsets.only(top: 50),
-                    width: 916,
-                    height: 46,
-                    decoration: BoxDecoration(
-                      color: const Color(0xFF39EADD),
-                    ),
-                    child: Text(
-                      "Jumlah mahasiswa yang ingin kompensasi",
-                      style: GoogleFonts.poppins(
-                        fontSize: 24,
-                        color: Colors.black,
-                      ),
-                    ),
-                  ),
+
+                  SizedBox(height: 40.0),
+
                   Container(
                     width: 916,
-                    height: 150,
+                    height: 578,
+                    //margin: const EdgeInsets.only(left: 50, right: 50),
                     decoration: BoxDecoration(
                       color: const Color(0xFFFFFFFF),
-                    ),
-                    child: Center(
-                      child: Text(
-                        "10",
-                        style: GoogleFonts.poppins(
-                          fontSize: 48,
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withOpacity(0.2),
+                          spreadRadius: 5,
+                          blurRadius: 70,
+                          offset: const Offset(0, 5),
                         ),
-                      ),
+                      ],
                     ),
                   )
                 ],
