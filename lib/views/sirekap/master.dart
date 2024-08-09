@@ -1,6 +1,9 @@
 import 'package:academix_polnep/views/sirekap/views/dashboard.dart';
 import 'package:academix_polnep/views/sirekap/views/revisi/pages.dart';
 import 'package:academix_polnep/views/sirekap/views/surat_peringatan/examp.dart';
+import 'package:academix_polnep/views/sirekap/views/dashboard/cobe.dart';
+// import 'package:academix_polnep/views/sirekap/views/dashboard/notifikasi.dart';
+// import 'package:academix_polnep/views/sirekap/views/dashboard/nt.dart';
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:flutter/material.dart';
 
