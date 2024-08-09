@@ -530,12 +530,68 @@ class _VerifikasiState extends State<Verifikasi> {
                             itemCount: 1,
                             itemBuilder: (BuildContext context, int index) {
                               return ListTile(
-                                leading: Text((index + 1).toString()),
-                                title: Text('Anggi Nabila Sulistianingsih'),
-                                subtitle: Text('32022161086'),
-                                trailing: ElevatedButton(
-                                  onPressed: () => _showDetailSurat(context),
-                                  child: Text('Lihat'),
+                                contentPadding: EdgeInsets.all(16.0),
+                                title: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text('No: ${index + 1}'),
+                                    Text('Nama: Anggi Nabila Sulistianingsih '),
+                                    Text('NIM: 32022161086'),
+                                    Text('Semester/Kelas: Semester 4 / Kelas c'),
+                                    Text('Ketidakhadiran: 15 hari'),
+                                    Text('Surat Peringatan: SP-1'),
+                                    Text('Detail Surat: surat peringatan pertama'),
+                                    Text('Verifikasi: Belum'),
+                                    Text('Status Verifikasi: Belum Verifikasi'),
+                                    ],
+                                    {
+                                    Text('No: ${index + 1}'),
+                                    Text('Nama: oliver Dillon '),
+                                    Text('NIM: 32022160125'),
+                                    Text('Semester/Kelas: Semester 4 / Kelas c'),
+                                    Text('Ketidakhadiran: 39 hari'),
+                                    Text('Surat Peringatan: SP-3'),
+                                    Text('Detail Surat: surat peringatan ketiga'),
+                                    Text('Verifikasi: Belum'),
+                                    Text('Status Verifikasi: Belum Verifikasi'),
+                                    }
+                                    {
+                                    Text('No: ${index + 1}'),
+                                    Text('Nama: Muhammad Sapri Syaiful '),
+                                    Text('NIM: 32022160139'),
+                                    Text('Semester/Kelas: Semester 4 / Kelas c'),
+                                    Text('Ketidakhadiran: 16 hari'),
+                                    Text('Surat Peringatan: SP-2'),
+                                    Text('Detail Surat: surat peringatan kedua'),
+                                    Text('Verifikasi: Sudah'),
+                                    Text('Status Verifikasi: Sudah Verifikasi'),
+                                    }
+                                    {
+                                    Text('No: ${index + 1}'),
+                                    Text('Nama: Rizwanda '),
+                                    Text('NIM: 3202216081'),
+                                    Text('Semester/Kelas: Semester 4 / Kelas c'),
+                                    Text('Ketidakhadiran: 35 hari'),
+                                    Text('Surat Peringatan: SP-3'),
+                                    Text('Detail Surat: surat peringatan ketiga'),
+                                    Text('Verifikasi: Sudah'),
+                                    Text('Status Verifikasi: Sudah Verifikasi'),
+                                    }
+                                    {
+                                    Text('No: ${index + 1}'),
+                                    Text('Nama: Siti Sabrina Oktavia '),
+                                    Text('NIM: 32022168139'),
+                                    Text('Semester/Kelas: Semester 4 / Kelas c'),
+                                    Text('Ketidakhadiran: 18 hari'),
+                                    Text('Surat Peringatan: SP-2'),
+                                    Text('Detail Surat: surat peringatan kedua'),
+                                    Text('Verifikasi: Sudah'),
+                                    Text('Status Verifikasi: Sudah Verifikasi'),
+                                    }
+                                    ),
+                                    trailing: ElevatedButton(
+                                      onPressed: () => _showDetailSurat(context),
+                                      child: Text('Lihat'),
                                 ),
                               );
                             },
