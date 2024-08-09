@@ -15,7 +15,7 @@ class _NavbarSiRekapState extends State<NavbarSiRekap> {
   int selected = 0;
   
   final page = [
-    const Examp_page(),
+    const ExampPage(),
     const Text("Presensi"),
     const Text("Test"),
     const Text("Halo"),
@@ -34,21 +34,21 @@ class _NavbarSiRekapState extends State<NavbarSiRekap> {
       body: Center(
         child: page.elementAt(selected),
       ),
-      bottomNavigationBar: ConvexAppBar(
-        backgroundColor: Colors.white,
-        color: const Color(0xFF25B4D8),
-        activeColor: const Color(0xFF25B4D8),
-        style: TabStyle.react,
-        items: const [
-          TabItem(icon: Icons.home, title: 'Home'),
-          TabItem(icon: Icons.calendar_today, title: "Presensi"),
-          TabItem(icon: Icons.assessment, title: "Kalender"),
-          TabItem(icon: Icons.assessment, title: "Kelas"),
-          TabItem(icon: Icons.assessment, title: "Laporan"),
-        ],
-        onTap: changeSelectedNavBar,
-        initialActiveIndex: 0,
-      ),
+      // bottomNavigationBar: ConvexAppBar(
+      //   backgroundColor: Colors.white,
+      //   color: const Color(0xFF25B4D8),
+      //   activeColor: const Color(0xFF25B4D8),
+      //   style: TabStyle.react,
+      //   items: const [
+      //     TabItem(icon: Icons.home, title: 'Home'),
+      //     TabItem(icon: Icons.calendar_today, title: "Presensi"),
+      //     TabItem(icon: Icons.assessment, title: "Kalender"),
+      //     TabItem(icon: Icons.assessment, title: "Kelas"),
+      //     TabItem(icon: Icons.assessment, title: "Laporan"),
+      //   ],
+      //   onTap: changeSelectedNavBar,
+      //   initialActiveIndex: 0,
+      // ),
     );
   }
 }
